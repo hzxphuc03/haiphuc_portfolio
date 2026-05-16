@@ -31,20 +31,23 @@ export const AboutSection = () => {
         <div className="flex flex-col gap-6 sm:gap-8 md:gap-10">
           <AnimatedText 
             text="With more than one year of experience in web development, i focus on Angular & Next.js architecture and building optimized production systems."
-            className="text-[#D7E2EA] font-medium text-center leading-relaxed"
+            className="text-[#D7E2EA] font-medium text-center leading-relaxed font-kanit"
             style={{ fontSize: 'clamp(1rem, 2.2vw, 1.5rem)' } as any}
+            offset={["start 0.9", "start 0.7"]}
           />
 
           <AnimatedText 
             text="I'm currently at FSEL, designing reusable frontend architectures and handling complex asynchronous data flows with RxJS operators."
-            className="text-[#D7E2EA]/70 font-light text-center leading-relaxed italic"
+            className="text-[#D7E2EA]/70 font-normal text-center leading-relaxed font-kanit"
             style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' } as any}
+            offset={["start 0.75", "start 0.55"]}
           />
 
           <AnimatedText 
             text="Reach me at: phucpanda2003@gmail.com — +84 972 221 123"
-            className="text-[#D7E2EA] font-medium text-center tracking-widest border-t border-[#D7E2EA]/10 pt-10"
+            className="text-[#D7E2EA] font-medium text-center tracking-widest border-t border-[#D7E2EA]/10 pt-10 font-kanit"
             style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1.125rem)' } as any}
+            offset={["start 0.6", "start 0.4"]}
           />
         </div>
         

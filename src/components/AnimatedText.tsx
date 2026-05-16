@@ -5,13 +5,14 @@ interface AnimatedTextProps {
   text: string;
   className?: string;
   style?: React.CSSProperties;
+  offset?: [any, any];
 }
 
-export const AnimatedText = ({ text, className = "", style }: AnimatedTextProps) => {
+export const AnimatedText = ({ text, className = "", style, offset = ["start 0.8", "end 0.2"] }: AnimatedTextProps) => {
   const containerRef = useRef<HTMLParagraphElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.8", "end 0.2"]
+    offset: offset
   });
 
   const words = text.split(" ");
