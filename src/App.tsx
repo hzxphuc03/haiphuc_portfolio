@@ -27,7 +27,7 @@ function App() {
         
         <div className="flex gap-6 text-[#D7E2EA] font-medium uppercase tracking-wider text-sm">
           <a href="mailto:phucpanda2003@gmail.com" className="hover:opacity-70 transition-opacity">Email</a>
-          <a href="https://haiphucorder.io.vn" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">Domain</a>
+          <a href="https://haiphucorder.io.vn" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">HaiPhucShop</a>
           <a href="#projects" className="hover:opacity-70 transition-opacity">Portfolio</a>
         </div>
 
