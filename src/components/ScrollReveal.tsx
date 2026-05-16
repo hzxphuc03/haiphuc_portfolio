@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef, type ReactNode } from 'react';
 
 type RevealType = 
@@ -81,10 +81,6 @@ export const ScrollReveal = ({
   amount = 0.3,
 }: ScrollRevealProps) => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"]
-  });
 
   const variants = getVariants(type);
 
