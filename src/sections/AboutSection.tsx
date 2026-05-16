@@ -29,7 +29,7 @@ export const AboutSection = () => {
       {/* Animated Text Block */}
       <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24 max-w-[700px]">
         <AnimatedText 
-          text="With more than one year of experience in web development, i focus on Angular & Next.js architecture, and building optimized production systems. I'm currently at FSEL, designing reusable frontend architectures and handling complex asynchronous data flows with RxJS operators like switchMap and debounceTime. Let's build something incredible together!"
+          text="With more than one year of experience in web development, i focus on Angular & Next.js architecture, and building optimized production systems. I'm currently at FSEL, designing reusable frontend architectures and handling complex asynchronous data flows with RxJS operators like switchMap and debounceTime. Let's build something incredible together! Reach me at phucpanda2003@gmail.com or +84 972 221 123."
           className="text-[#D7E2EA] font-medium text-center leading-relaxed"
           style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' } as any}
         />
