@@ -44,7 +44,7 @@ export const ServicesSection = () => {
               key={service.number}
               delay={i * 0.1}
               y={30}
-              className={`flex items-center gap-6 sm:gap-10 md:gap-16 py-8 sm:py-10 md:py-12 border-b border-[#0C0C0C]/15 ${i === 0 ? 'border-t' : ''}`}
+              className={`flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10 md:gap-16 py-8 sm:py-10 md:py-12 border-b border-[#0C0C0C]/15 ${i === 0 ? 'border-t' : ''}`}
             >
               <span 
                 className="text-[#0C0C0C] font-black leading-none flex-shrink-0"
