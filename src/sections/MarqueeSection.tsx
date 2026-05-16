@@ -1,15 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 
 const IMAGES = [
-  "https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif",
+  "/dev1.png",
+  "/dev2.png",
+  "/dev3.png",
   "https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif",
   "https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif",
   "https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif",
-  "https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif",
   "https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif",
   "https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif",
-  "https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif",
-  "https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif",
   "https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif",
   "https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif",
   "https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif",
@@ -24,8 +23,8 @@ const IMAGES = [
   "https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif"
 ];
 
-const Row1 = IMAGES.slice(0, 11);
-const Row2 = IMAGES.slice(11);
+const Row1 = IMAGES.slice(0, 10);
+const Row2 = IMAGES.slice(10);
 
 export const MarqueeSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -50,9 +49,9 @@ export const MarqueeSection = () => {
     const translateX = direction === 'right' ? (scrollOffset - 200) : -(scrollOffset - 200);
 
     return (
-      <div 
+      <div
         className="flex gap-3 transition-transform duration-100 ease-linear"
-        style={{ 
+        style={{
           transform: `translateX(${translateX}px)`,
           willChange: 'transform'
         }}
@@ -71,7 +70,7 @@ export const MarqueeSection = () => {
   };
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="bg-[#0C0C0C] pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden"
     >
